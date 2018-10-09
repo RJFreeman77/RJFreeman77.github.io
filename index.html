@@ -1,40 +1,69 @@
-<!-- CSS Stylesheets with Relative Paths -->
-
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>About Me </title>
 </head>
 
 <body>
-  <header>
-    <h1>Student Bio</h1>
-  </header>
+    <div class="wrapper">
+        <header class="header clearfix">
+            <div class="headercontent">
+                <div class="name">
+                    <h1>Ryan J Freeman</h1>
+                </div>
+                <div class="link contact">
+                    <p>
+                        <a href="contact.html">Contact</a>
+                    </p>
+                </div>
+                <div class="link portfolio">
+                    <p>
+                        <a href="portfolio.html">Portfolio</a>
+                    </p>
+                </div>
+                <div class="link about">
+                    <p>
+                        <a href="index.html">About</a>
+                    </p>
+                </div>
+            </div>
+        </header>  
+        <div class="content" >
+            <h2>About Me</h2>
+            <hr>
+            <div class="about-img-container">
+                <img id="about-img" src="assets/images/acepicture.jpg" alt="profile picture" width="150px">
+            </div>
+            <p>
+                Hello! You've reached my website, so I'm going to share some information about myself with you. I'm a Kansas City native,
+                who loves to disc golf, play board and tabletop games, travel, and consuming all the wonderful BBQ our city
+                has to offer. I have a degree in Justice and Peace Studies from Creighton University, and am now attending
+                the KU Coding Bootcamp! While in college, I studied abroad in the I have traveled to the Dominican Republic,
+                Mexico, Boliva, and Peru!
+            </p>
+            <p>
+                Currently, I work at a small software company called Soleran as the Support Team Lead, and Project Manager for our Development
+                Team. When I started managing our development team, I decided that it would be a good idea for me to learn
+                to code, so I enrolled in the KU Codeing Bootcamp's Fall 2018 Cohort. I am excited to learn what being a
+                full stack developer is all about, and take my coding skills to the next level!
+            </p>
+            <p>
+                Please take a look at the projects listed in my portfolio, and feel free to reach out to me via my contact page!
+            </p>
+        </div>
 
-  <div class="container">
-
-    <section id="main-bio">
-
-      <h2>Your Name</h2>
-
-      <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
-
-      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
-    </section>
-
-    <section id="contact-info">
-      <h2>Contact Info</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
-      </ul>
-    </section>
-  </div>
-
+        <!-- Couldn't figure out the sticky footer-->
+        <footer class="site-footer">
+            <div class="footer-text-wrapper">
+                <span id="copyright">Copyright &copy;</span>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
