@@ -1,80 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>About Me </title>
+  <title>Ryan J Freeman Portfolio</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="assets/vendor\font-awesome\css\fontawesome.css">
+  <!-- Google fonts - Montserrat for headings, Cardo for copy-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+  <!-- Lightbox-->
+  <link rel="stylesheet" href="assets/vendor/lightbox2/css/lightbox.min.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="assets/css/style.default.css" id="theme-stylesheet">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="assets/images/ryan_logo.svg">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header clearfix">
-            <div class="headercontent">
-                <div class="name">
-                    <h1>Ryan J Freeman</h1>
-                </div>
-                <div class="link contact">
-                    <p>
-                        <a href="contact.html">Contact</a>
-                    </p>
-                </div>
-                <div class="link portfolio">
-                    <p>
-                        <a href="portfolio.html">Portfolio</a>
-                    </p>
-                </div>
-                <div class="link about">
-                    <p>
-                        <a href="index.html">About</a>
-                    </p>
-                </div>
-            </div>
-        </header>
-        <div class="content">
-            <h2>About Me</h2>
-            <hr>
-            <div class="about-img-container">
-                <img id="about-img" src="assets/images/acepicture.jpg" alt="profile picture" width="150px">
-            </div>
-            <p>
-                Hello! You've reached my website, so I'm going to share some information about myself with you. I'm a
-                Kansas City native,
-                who loves to disc golf, play board and tabletop games, travel, and consuming all the wonderful BBQ our
-                city
-                has to offer. I have a degree in Justice and Peace Studies from Creighton University, and am now
-                attending
-                the KU Coding Bootcamp! While in college, I studied abroad in the I have traveled to the Dominican
-                Republic,
-                Mexico, Boliva, and Peru!
-            </p>
-            <p>
-                Currently, I work at a small software company called Soleran as the Support Team Lead, and Project
-                Manager for our Development
-                Team. When I started managing our development team, I decided that it would be a good idea for me to
-                learn
-                to code, so I enrolled in the KU Codeing Bootcamp's Fall 2018 Cohort. I am excited to learn what being
-                a
-                full stack developer is all about, and take my coding skills to the next level!
-            </p>
-            <p>
-                Please take a look at the projects listed in my portfolio, and feel free to reach out to me via my
-                contact page!
-            </p>
+  <section id="intro" style="background-image: url('assets/images/wood2.jpg');" class="intro">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="container clearfix">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 mx-auto">
+            <p class="italic">Oh, hello, nice to meet you!</p>
+            <h1>I am Ryan J Freeman</h1>
+            <p class="italic">Please take a moment to look at my portfolio.</p>
+          </div>
         </div>
-
-        <!-- Couldn't figure out the sticky footer-->
-        <footer class="site-footer">
-            <div class="footer-text-wrapper">
-                <span id="copyright">Copyright &copy;</span>
-            </div>
-        </footer>
+      </div>
     </div>
+  </section>
+  <!-- intro end-->
+  <!-- navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container"><a href="#intro" class="navbar-brand link-scroll"><img width="50px" src="assets/images/ryan_logo.svg"
+            alt="logo" class="img-fluid"></a>
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link link-scroll">About </a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link link-scroll">Skills</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link link-scroll">Portfolio</a></li>
+            <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- about-->
+  <section id="about" class="text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="heading">About me</h2>
+          <p class="lead">Junior Developer and PM Excited to Exand Skills.</p>
+          <p>Thanks for taking a look at my portfolio. I am currently a student at KU's Coding Bootcamp, learning the
+            full MERN web stack. I fell in love with Javascript the moment I declared my first variables and called my
+            first function. While I know my way around HTML and CSS, my strengths definitely reside more on the JS side
+            of web development. I currently work as a Project Lead and Support Team Lead at Soleran, Inc. When I
+            complete this Coding
+            Bootcamp, I hope to apply the skills I've learned to do these jobs better.
+          </p>
+          <p>
+            When I'm not coding or at work, I'm at the table playing board games, tabletop games, or at the
+            park working on my Disc Golf game.
+          </p>
+          <p>I strongly believe that we produce our best when we are valued, respected, and comfortable. This is why,
+            in the workplace and in life, I stive to treat my team mates with respect and cultivate an environment
+            where all people feel welcome.
+          </p>
+        </div>
+        <div class="col-lg-5 mx-auto">
+          <p><img src="assets/images/ace_picture.jpg" alt="" class="img-fluid rounded-circle"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about end-->
+  <!-- Skills-->
+  <section id="skills" style="background-color: #eee">
+    <div class="container">
+      <div class="row services">
+        <div class="col-lg-12">
+          <h2 class="heading">Skills</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="icon"><i class="fas fa-desktop"></i></div>
+                <h4>Web Dev</h4>
+                <ul>
+                  <li>HTML5</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Flex/Grid</li>
+                  <li>Firebase</li>
+                  <li>Node</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="icon"><i class="fas fa-journal-whills"></i></div>
+                <h4>Frameworks / Libraries</h4>
+                <ul>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                  <li>Moment.js</li>
+                  <li>Popper.js</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="box">
+                <div class="icon"><i class="fas fa-project-diagram"></i></div>
+                <h4>Project Management</h4>
+                <ul>
+                  <li>Project Owner</li>
+                  <li>Scrum Master</li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="col-lg-3">
+              <div class="box">
+                <div class="icon"><i class="fas fa-dice"></i></div>
+                <h4>Games</h4>
+                <ul>
+                  <li>Pandemic</li>
+                  <li>Azule</li>
+                  <li>D&D 5e</li>
+                  <li>Gloomhaven</li>
+                  <li>Mouse Guard</li>
+                  <li>Torchbearer</li>
+                  <li>Arkham Horror LCG</li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services end-->
+  <!-- Portfolio / gallery-->
+  <section id="portfolio" class="gallery">
+    <div class="container clearfix">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-md-12 col-lg-8">
+              <h2 class="heading">Portfolio</h2>
+              <p>Below is a collection of some of my favorite projects and assignments. Please take some time to click
+                through them and play some of the games.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/project1/" target="_blank" data-title="American Safari"
+                  class="has-border"><img src="assets/images/american_safari.PNG" alt="American Safari" class="img-fluid"></a></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/Train-Schedule/" target="_blank" 
+                  data-title="Train Schedule" class="has-border"><img src="assets/images/train_schedule.PNG" alt="Train Schedule"
+                    class="img-fluid"></a></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/Giftastic/" target="_blank" data-title="Some footer information"
+                  class="has-border"><img src="assets/images/giphy_search.PNG" alt="image" class="img-fluid"></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/TriviaGame/" target="_blank" data-title="Music Trivia"
+                  class="has-border"><img src="assets/images/music_trivia.PNG" alt="Music Trivia" class="img-fluid"></a></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/unit-4-game/" target="_blank"data-title="Adventure Time RPG Game"
+                  class="has-border"><img src="assets/images/rpg_game.PNG" alt="image" class="img-fluid"></a></div>
+            </div>
+            <div class="col-md-4">
+              <div class="box"><a href="https://rjfreeman77.github.io/unit-4-game/" target="_blank" data-lightbox="image-1" data-title="Hangman Game"
+                  class="has-border"><img src="assets/images/hang_man.PNG" alt="Hangman Game" class="img-fluid"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Portfolio / gallery end-->
+  <!-- text page-->
+  <section id="text" class="text-page section-inverse">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="heading">Game Design</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own
+                additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw
+                man led. Along on happy could cease green oh. </p>
+              <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call
+                them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she.
+                Of death to or to being other. </p>
+            </div>
+            <div class="col-md-6">
+              <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing
+                shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he
+                up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware
+                their at. Chicken use are pressed removed. </p>
+              <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its
+                mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing
+                engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- text page end-->
+  <!-- contact-->
+  <section id="contact" style="background-color: #fff;" class="text-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="heading">Contact</h2>
+          <div class="row">
+            <div class="col-lg-6">
+              <form id="contact-form" method="post" action="#" class="contact-form">
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">Firstname *</label>
+                        <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="surname">Lastname *</label>
+                        <input type="text" name="surname" placeholder="Enter your lastname" required="required" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Email *</label>
+                    <input type="email" name="email" placeholder="Enter your email" required="required" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Short message *</label>
+                    <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6">
+              <p>If you could like to contact me, please fill out the form to the left. I would love to collaborate
+                with other Junior Javascript developers and game designers. </p>
+              <p>Or, if you like, you can find me on my social media sites below!</p>
+              <p class="social">
+                <a href="https://twitter.com/RyanFre87141103" title="" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/raulsmundo/" title="" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ryan-freeman-759a95a4" title="" class="email" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:ryanjfreeman77@gmail.com" title="" class="linkedin" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/RJFreeman77" class="github" target="_blank"><i class="fab fa-github"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <div id="map"></div> -->
+  <footer style="background-color: #111;">
+    <div class="container">
+      <div class="row copyright">
+        <div class="col-md-4">
+          <p class="mb-md-0 text-center text-md-left">&copy; 2018 Ryan J Freeman</p>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-md-0 text-center">"friends, every day do something
+            that won’t compute."</p>
+        </div>
+        <div class="col-md-4">
+          <p class="credit mb-md-0 text-center text-md-right">Template by <a href="http://bootstrapious.com/landing-pages">Bootstrap
+              Landing Pages</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-    <script src="assets/javascript/app.js" type="text/javascript"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/popper.js/umd/popper.min.js"> </script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="assets/vendor/jquery.cookie/jquery.cookie.js"> </script>
+  <script src="assets/vendor/lightbox2/js/lightbox.min.js"></script>
+  <script src="assets/javascript/front.js"></script>
 </body>
 
 </html>
