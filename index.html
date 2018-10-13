@@ -241,7 +241,7 @@
                 balance.
                 ICRPG's health point system is based off 10-point increment hearts, which lightens the GM's admin and
                 allows them to focus more on the scene.
-                And finally, there is already a tremendous online community of ICRPG hackers to collabrate with! 
+                And finally, there is already a tremendous online community of ICRPG hackers to collabrate with!
               </p>
               <p>
                 This project is very much in its infancy, but check back for play testing materials and more soon!
@@ -267,26 +267,27 @@
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="name">Firstname *</label>
-                        <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                        <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control" id="contact-firstName">
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="surname">Lastname *</label>
-                        <input type="text" name="surname" placeholder="Enter your lastname" required="required" class="form-control">
+                        <input type="text" name="surname" placeholder="Enter your lastname" required="required" class="form-control" id="contact-lastName">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="surname">Email *</label>
-                    <input type="email" name="email" placeholder="Enter your email" required="required" class="form-control">
+                    <input type="email" name="email" placeholder="Enter your email" required="required" class="form-control" id="contact-email">
                   </div>
                   <div class="form-group">
                     <label for="surname">Short message *</label>
-                    <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                    <textarea rows="4" name="message" placeholder="You're amazing, I want to work with you!" required="required"
+                      class="form-control" id="contact-message"></textarea>
                   </div>
                   <div class="text-center">
-                    <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
+                    <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block" id="contact-submit">
                   </div>
                 </div>
               </form>
@@ -328,6 +329,8 @@
     </div>
   </footer>
 
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/popper.js/umd/popper.min.js"> </script>

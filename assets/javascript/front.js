@@ -1,9 +1,17 @@
+// Initialize Firebase
+const config = {
+    apiKey: "AIzaSyDW52qZrfSBh9WNqBa-X7uDwCPtqU-w9sQ",
+    authDomain: "porfolio-4f174.firebaseapp.com",
+    databaseURL: "https://porfolio-4f174.firebaseio.com",
+    projectId: "porfolio-4f174",
+    storageBucket: "porfolio-4f174.appspot.com",
+    messagingSenderId: "189232253121"
+};
+firebase.initializeApp(config);
+const database = firebase.database();
+
 $(function () {
-
-    // ---------------------------------------------- //
     // Navbar
-    // ---------------------------------------------- //
-
     $(document).scroll(function () {
         if ($(window).scrollTop() >= $('header').offset().top) {
             $('nav').addClass('sticky');
@@ -12,35 +20,25 @@ $(function () {
         }
     });
 
-    // ---------------------------------------------- //
     // Scroll Spy
-    // ---------------------------------------------- //
-
     $('body').scrollspy({
         target: '.navbar',
         offset: 80
     });
 
-    // ---------------------------------------------- //
     // Preventing URL update on navigation link click
-    // ---------------------------------------------- //
-
-    $('.navbar-nav a, #scroll-down').bind('click', function (e) {
+    $('.navbar-nav a, #scroll-down').bind('click', function (event) {
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
         }, 1000);
-        e.preventDefault();
+        event.preventDefault();
     });
 
-    // // ------------------------------------------------------ //
     // // styled Google Map
-    // // ------------------------------------------------------ //
-    
     // map();
-
     var stylesheet = $('link#theme-stylesheet');
-    $( "<link id='new-stylesheet' rel='stylesheet'>" ).insertAfter(stylesheet);
+    $("<link id='new-stylesheet' rel='stylesheet'>").insertAfter(stylesheet);
     var alternateColour = $('link#new-stylesheet');
 
     if ($.cookie("theme_csspath")) {
@@ -50,30 +48,20 @@ $(function () {
     $("#colour").change(function () {
 
         if ($(this).val() !== '') {
-
             var theme_csspath = 'css/style.' + $(this).val() + '.css';
-
             alternateColour.attr("href", theme_csspath);
-
             $.cookie("theme_csspath", theme_csspath, { expires: 365, path: document.URL.substr(0, document.URL.lastIndexOf('/')) });
-
         }
 
         return false;
     });
-
 });
 
-
-// ------------------------------------------------------ //
 // styled Google Map
-// ------------------------------------------------------ //
-
+// Not currently using this functionality
 function map() {
 
     if ($('#map').length > 0) {
-
-
         function initMap() {
 
             var location = new google.maps.LatLng(-12.043501, -77.027947);
@@ -115,8 +103,39 @@ function map() {
 
             map.set('styles', styles);
         }
-
         // google.maps.event.addDomListener(window, 'load', initMap);
     }
 
+}
+
+// Firebase 
+let contactor = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+    fullName: function () {
+        let fullName = (this.firstName + " " + this.lastName);
+        return fullName;
+    }
+};
+
+$("#contact-submit").on("click", function (event) {
+    event.preventDefault();
+    contactor.firstName = $("#contact-firstName").val().trim();
+    contactor.lastName = $("#contact-lastName").val().trim();
+    contactor.email = $("#contact-email").val().trim();
+    contactor.message = $("#contact-message").val().trim();
+    $(".form-control").val("");
+    pushContactor(contactor);
+
+});
+
+function pushContactor(obj) {
+    database.ref(contactor.fullName()).set({
+        firstName: obj.firstName,
+        lastName: obj.lastName,
+        email: obj.email,
+        message: obj.message,
+    });
 }
